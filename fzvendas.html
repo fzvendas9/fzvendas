@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site de Vendas Offline</title>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Site de Vendas Offline</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Produtos</h2>
+      <ul>
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li>Produto 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Carrinho de Compras</h2>
+      <ul id="carrinho">
+        <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+      </ul>
+
+      <button onclick="limparCarrinho()">Limpar Carrinho</button>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Site de Vendas Offline. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Função para limpar o carrinho de compras
+    function limparCarrinho() {
+      var carrinho = document.getElementById('carrinho');
+      carrinho.innerHTML = '';
+    }
+
+    // Função para finalizar a compra (exemplo)
+    function finalizarCompra() {
+      var carrinho = document.getElementById('carrinho');
+      var itens = carrinho.getElementsByTagName('li');
+
+      if (itens.length > 0) {
+        alert('Compra finalizada com sucesso!');
+        limparCarrinho();
+      } else {
+        alert('O carrinho está vazio. Adicione itens antes de finalizar a compra.');
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Site</title>
+</head>
+<body>
+  <h1>Bem-vindo ao fzvendas!</h1>
+  
+  <p>Visite nosso site:</p>
+  <a href="https://www.fzvendas.com">fzvendas</a>
+</body>
+  </html>
+    
